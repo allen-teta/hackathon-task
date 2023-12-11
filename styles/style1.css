@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#navigation{
+    background-color:rgba(5, 35, 49, 0.9);
+    width: 100%;
+   
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: aliceblue;
+
+}
+.icons ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    list-style: none;
+    
+    /* margin-right: 400px; */
+    
+    
+}
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.header2{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    list-style: none;
+    padding: 10px;
+    font-size: 15px;
+   
+    font-weight: bold;
+    color: aliceblue;
+   
+}
+.header2 ul{
+    display: flex;
+    gap: 20px;
+}
+.header2 ul li {
+list-style: none;
+
+}
+
+main{
+    background: rgb(3, 133, 61);
+    background-image: linear-gradient(115deg, rgba(23, 25, 26, 0.9), rgba(9, 78, 121, 0.5)  ),
+    url(../images/img1.jpeg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+   
+    
+}
+
+ @keyframes wordAnimation {
+    0% { color:black; transform: scale(1); }
+    50% { color: rgb(235, 240, 240); transform: scale(1.2); }
+    100% { color: rgba(239, 240, 246, 0.553); transform: scale(1.1); }
+}
+
+#mainC {
+    display: inline-block;
+    display: flex;
+ text-align: center;
+ justify-content: center;
+ align-items: center;
+padding-top: 200px;
+font-size: 40px;
+}  
+
+#logo{
+    margin-left: 500px;
+    padding-top: -10px;
+}
+
+
