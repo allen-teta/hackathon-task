@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="../styles/sty.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="screen and(max-width:1170px)"href="table.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="heading">HI,I AM</h1>
+        <h1 class="heading"> ALLEN TETA</h1>
+        <P>THIS IS MY RESUME AS BACKEND DEVELOPER</P>
+    </section>
+    <section id="portfolio">
+        <h1 class="heading">MY PORTFOLIO</h1>
+        <div class="container">
+            <img src="../images/me.jpg" alt="">
+            <img src="../images/BeautyPlus_20231118165242507_save.jpg" alt="">
+            <img src="../images/imgss.jpg" alt="">
+            <img src="../images/imgs.jpg" alt="">
+    
+        </div>
+
+    </section>
+    <section id="education">
+        <h1 class="heading">MY EDUCATION</h1>
+        <div class="column">
+            <div class="box">
+                <h2>High school graduate in software development</h2>
+                <h3>2023</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                   Illum reiciendis nobis possimus cupiditate odit ex ipsa esse?
+                    Aliquam, a! Dolorem, veniam possimus amet officia assumenda
+                    non placeat? Maxime, tenetur excepturi!</p>
+            </div>
+            <div class="box">
+                <h2>Trained as backend developer</h2>
+                <h3>SheCanCode Program</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Animi necessitatibus beatae cumque voluptas, 
+                     earum omnis optio atque labore ipsum debitis.
+                     Consequuntur porro iste corporis repellat rerum soluta, nam libero provident.</p>
+
+            </div>
+            </div>
+    </section>
+    <div class="skill"><h1>MY SKILLS</h1></div>
+    <div class="container-skills">
+        <box-icon name='x' color='#ffffff'size="30" onclick=hide()></box-icon>
+    <h3>HTML 95%</h3>
+    <div class="skills">
+        <div class="first-skill"></div>
+    </div>
+    <h3>CSS 90%</h3>
+    <div class="skills">
+        <div class="second-skill"></div>
+    </div>
+    <h3>JAVASCRIPT 50%</h3>
+    <div class="skills">
+        <div class="third-skill"></div>
+    </div>
+    <h3>PHP 85%</h3>
+    <div class="skills">
+        <div class="forth-skill"></div>
+    </div>
+    <h3>C++ 65% </h3>
+    <div class="skills">
+        <div class="firth-skill"></div>
+    </div>
+</div>
+​
+<button onclick=show()>Click here to view my skills.</button>
+​
+<script>
+    function show(){
+        var a = document.querySelector(".container-skills");
+        a.style.display = "block";
+    }
+​
+    function hide(){
+        var a = document.querySelector(".container-skills");
+        a.style.display = "none";
+    }
+</script>
+    <section id="about">
+        <h1 class="heading">ABOUT ME</h1>
+        <div class="about">
+            <img src="../images/imgc.jpg" alt=" my picture">
+            <div class="name">
+                <h2>Hello, I am ALLEN <NAME></h2>
+                <h3>Software Developer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                   Illum reiciendis nobis possimus cupiditate odit ex ipsa esse?
+                    Aliquam, a! Dolorem, veniam possimus amet officia assumenda
+                    non placeat? Maxime, tenetur 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Illum reiciendis nobis possimus cupiditate odit ex ipsa esse?
+                    Enim natus numquam voluptatum dolore eaque officiis dolorum non,
+                     quisquam maxime neque veniam architecto provident? 
+                    Ea debitis tenetur cumque quam aspernatur qui!excepturi!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Praesentium non quidem eaque nam veniam quisquam laboriosam,
+                    quae tenetur inventore quo ab enim minima, 
+                    officiis repellendus vitae autem saepe? Doloribus, beatae.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolores, 
+                    sed culpa blanditiis inventore quis veniam quibusdam,
+                     numquam eaque mollitia, voluptatum accusamus.
+                     Animi laborum vitae labore excepturi, possimus corporis placeat?
+                </p>
+            </div>
+            
+    </section>
+    <section id="contact">
+        <h1 class="heading">contact me</h1>
+        <form action="" class="form">
+            <input type="text" name="name" class="input" placeholder="Enter your Name">
+            <input type="text" name="email" class="input" placeholder="Enter your email">
+            <textarea name="message" id="message" cols="70" rows="20" placeholder="Enter your message"></textarea>
+            <input type="submit" value="submit" id="submit">
+        </form>
+        <div class="parts">
+        <div class="part">
+            <h2>Contact me</h2>
+            <p>Email: allenteta22@gmail.com</p>
+            <p>Phone: +250793106654</p>
+        </div>
+        <div class="part">
+            <h2>My social-media</h2>
+            <a href="#" target="_blank"><i class='bx bxl-instagram-alt'></i>instagram</a>
+            <a href="#" target="_blank"><i class='bx bxl-facebook-circle'></i>fecebook</a>
+            <a href="#" target="_blank"><i class='bx bxl-twitter'></i>twiter</a>
+            <a href="#" target="_blank"><i class='bx bxl-linkedin' >linkedin</i></a>
+        </div>
+    </div>
+    </section>
+        
+</body>
+</html>

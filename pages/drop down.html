@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down Menu</title>
+    
+    <link rel="stylesheet" href="../styles/dropDown.css">
+</head>
+<body>
+<header>
+    <a href="#" class="logo"> my logo</a>
+    <div class="menu">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">DropDown <b>▼</b></a>
+                    <ul>
+                        <li><a href="#">product01</a></li>
+                        <li><a href="#">product02</a></li>
+                        <li><a href="#">product03 <b>+</b></a>
+                            <ul>
+                                <li><a href="#">post01</a></li>
+                                <li><a href="#">post02</a></li>
+                                <li><a href="#">post03</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                </li>
+                    <ul>
+                        <li><a href="#">portfolio</a></li>
+                        <li><a href="#">blog <b>▼</b></a>
+                    <ul>
+                        <li><a href="#">post01</a></li>
+                        <li><a href="#">post02</a></li>
+                        <li><a href="#">post03</a><b>+</b>
+                        <ul>
+                            <li><a href="#">Html</a></li>
+                            <li><a href="#">css</a></li>
+                            <li><a href="#">Javascript</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                    </li>
+                    </ul>
+                
+                    <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+    </div> 
+
+</header>
+<script>
+    let menuToggle = document.querySelector('.menu');
+    let header = document.querySelector('header');
+    menuToggle.onclick = function(){
+        header.classList.toggle('active');
+    }
+</script>
+    
+</body>
+</html>
