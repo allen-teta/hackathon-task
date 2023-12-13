@@ -77,10 +77,19 @@ header ul li ul li ul{
     top: 66;
     left: 0;
     background: #36474f;
-    display: none;
-
    }
-   header .active nav {
+   header nav ul li{
+    width: 100%;
+   }
+   header nav ul li ul{
+    position: relative;
+    width: 100%;
+    left: 0;
+   }
+   header nav ul li ul li{
+    width: 100%;
+   }
+   /* header .active nav {
     display: initial;
    }
    
@@ -150,6 +159,6 @@ header .active .menu::after
 
 
 
-
+ */
 
  }
